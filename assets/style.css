@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: bisque;
+    background-color: rgb(66, 101, 112);
     margin: 0;
     font-family: Inter;
 }
@@ -13,6 +13,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+
 }
 
 nav ul {
@@ -24,27 +25,45 @@ nav ul {
     height: 100vh;
     margin: 0;
     list-style: none;
-    width: 40%;
+    width: 30%;
     text-align: right;
     padding: 2em;
-    
+    transform: translateX(100%);
+    transition: 0.5s;
+
+
 
     li {
         margin: 1rem 0;
 
         &:nth-of-type(1) {
-            margin-bottom: 6em;
+            margin-bottom: 4em;
         }
 
         a {
             color: black;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
 
             &:hover {
-                color:blue
+                color:rgb(2, 2, 133)
             }
         }
     }
+}
+
+.open {
+   transform: translateX(0); 
+}
+
+p {
+    text-align: center;
+    margin-top: 3em;
+    font-size: 1.2em;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
