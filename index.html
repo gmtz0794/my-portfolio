@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style.css">
 
 </head>
 <body>
@@ -13,15 +17,25 @@
 
         <header>
             <div class="left-header">
-                Gustavo Martinez
+                <h1>Gustavo Martinez</h1>
             </div>
-
+            
+            
             <nav>
+                <a href="#" class="menu-open hide-desktop">
+                    <img src="open-menu.svg" height="40" alt="Open Menu">
+                </a>
+
                 <div class="right-header">
                     <ul>
-                        <li class="home">Home</li>
-                        <li class="portfolio">Portfolio</li>
-                        <li class="contact-information">Contact Information</li>
+                        <li>
+                            <a href="#" class="menu-close">
+                                <img src="close-menu.svg" height="40" alt="Close menu">
+                            </a>
+                        </li>
+                        <li><a href="index.html" class="home">Home</a></li>
+                        <li><a href="#" class="portfolio">Portfolio</a></li>
+                        <li><a href="#" class="contact-information">Contact Information</a></li>
                     </ul>
                 </div>
             </nav>
@@ -39,11 +53,17 @@
                 This decision helped acquire programming and knowledge, enriching my problem-solve skills, and creativity. 
                 Thank you for taking the time to get to know me better.
             </p>
+
+            <div class="portfolio-work">
+                <img src="" alt="">
+            </div>
         </main>
 
         <footer>
             <!-- insert social media icon links -->
         </footer>
     </div>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>
