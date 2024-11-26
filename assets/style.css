@@ -1,5 +1,4 @@
 
-
 body {
     background-color: rgb(66, 101, 112);
     margin: 0;
@@ -13,7 +12,10 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+}
 
+h1 {
+    margin-top: 1em;
 }
 
 nav ul {
@@ -57,13 +59,60 @@ nav ul {
    transform: translateX(0); 
 }
 
+#profile-pic {
+    display: block;
+    margin: 0 auto;
+}
+
 p {
     text-align: center;
     margin-top: 3em;
     font-size: 1.2em;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
+.portfolio-work {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 788px) {
+    .wrap {
+        margin: 0 4em;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .hide-mobile {
+        display: block;
+    }
+
+    .header-left {
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+    }
+
+    nav ul {
+        position: unset;
+        background: none;
+        display: flex;
+        gap: 1em;
+        height: auto;
+        width: auto;
+        transform: translateX(0%);
+
+        li a {
+            font-size: 1.2em;
+        }
+    }
 }
